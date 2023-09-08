@@ -22,7 +22,7 @@ int main(void)
 	while (litter <= 102)
 	{
 		putchar(litter);
-			liter++;
+			litter++;
 	}
 	putchar('\n');
 	return (0);
