@@ -11,7 +11,7 @@
 int main(void)
 {
 	int first_digit  = 0;
-	int second_digit = 0;
+	int second_digit;
 
 	for (first_digit ; first_digit <= 99 ; first_digit++)
 	{
