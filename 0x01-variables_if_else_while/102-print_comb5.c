@@ -10,21 +10,21 @@
 */
 int main(void)
 {
-	int first_digit  = 0;
-	int second_digit;
+	int firstDigit  = 0;
+	int secondDigit;
 
-	for (first_digit ; first_digit <= 99 ; first_digit++)
+	for (firstDigit ; firstDigit <= 99 ; firstDigit++)
 	{
-		second_digit = first_digit;
-		for (second_digit ; second_digit <= 99 ; second_digit++)
-			if (second_digit != first_digit)
+		secondDigit = firstDigit;
+		for (secondDigit ; secondDigit <= 99 ; secondDigit++)
+			if (secondDigit != firstDigit)
 			{
-				putchar((first_digit / 10) + 48);
-				putchar((first_digit % 10) + 48);
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
 				putchar(' ');
-				putchar((second_digit / 10) + 48);
-				putchar((second_digit % 10) + 48);
-				if (first_digit != 98 || second_digit != 99)
+				putchar((secondDigit / 10) + 48);
+				putchar((secondDigit % 10) + 48);
+				if (firstDigit != 98 || secondDigit != 99)
 				{
 					putchar(',');
 					putchar(' ');
