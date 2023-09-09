@@ -13,10 +13,11 @@ int main(void)
 	int firstDigit  = 0;
 	int secondDigit;
 
-	for (firstDigit ; firstDigit <= 99 ; firstDigit++)
+	while (firstDigit <= 99)
 	{
 		secondDigit = firstDigit;
-		for (secondDigit ; secondDigit <= 99 ; secondDigit++)
+		while (secondDigit <= 99)
+		{
 			if (secondDigit != firstDigit)
 			{
 				putchar((firstDigit / 10) + 48);
@@ -30,6 +31,9 @@ int main(void)
 					putchar(' ');
 				}
 			}
+			secondDigit++;
+		}
+		firstDigit++;
 	}
 	putchar('\n');
 	return (0);
