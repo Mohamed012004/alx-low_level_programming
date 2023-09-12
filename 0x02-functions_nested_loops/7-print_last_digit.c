@@ -3,12 +3,13 @@
 /**
  * print_last_digit - print last digit of input number
  *
- * @n: check input of function
+ * @n: take integer input number of function
  *
- * Return: return n % 10;
+ * Return: return 0 (Success);
 */
 
 int print_last_digit(int n)
 {
-	return ((n % 10) * 10 + n % 10);
+	_putchar(n % 10 + '0');
+	return (0);
 }
