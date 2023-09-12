@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * print_alphabet - print the alphabet in lowercase using putchar prototype
