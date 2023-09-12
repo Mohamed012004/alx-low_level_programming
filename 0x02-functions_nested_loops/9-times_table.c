@@ -22,11 +22,21 @@ void times_table(void)
 			for (j = 0; j < 9; j++)
 			{
 				logic += i;
+				if (logic > 9)
+				{
+					_putchar(logic / 10 + 48);
+					_putchar(logic % 10 + 48);
+				}
+				else
 				_putchar(logic + 48);
+				if (j < 8)
+				{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				}
 			}
 			_putchar('\n');
 		}
 	}
+}
