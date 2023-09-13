@@ -29,7 +29,7 @@ void print_times_table(int n)
 					_putchar((i * j) / 100 + 48);
 					_putchar(((i * j) / 10) % 10 + 48);
 				}
-				else if (n > 9 && n <= 99)
+				else if (i * j > 9 && i * j <= 99)
 					_putchar((i * j) / 10 + 48);
 				_putchar((i * j) % 10 + 48);
 			}
