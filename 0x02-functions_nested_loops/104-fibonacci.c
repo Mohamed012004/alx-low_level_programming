@@ -35,7 +35,7 @@ int main(void)
 	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
 	int i, initial0s;
 
-	for (i = 1; i < 95; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
@@ -54,7 +54,7 @@ int main(void)
 		f1o = f2o;
 		f2o = sumo;
 
-		if (i == 95)
+		if (i == 98)
 			printf("\n");
 		else
 			printf(", ");
