@@ -7,7 +7,7 @@
 
 void sum(void)
 {
-	int i, sun = 0;
+	int i, sum = 0;
 
 	for (i = 1; i < 1024; i++)
 		sum += i;
