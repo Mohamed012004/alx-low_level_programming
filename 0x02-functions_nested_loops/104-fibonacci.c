@@ -49,8 +49,8 @@ int main(void)
 
 		sum = (f1 + f2) % mx;
 		sumo = f1o + f2o + (f1 + f2) / mx;
-		fib1 = fib2;
-		fib2 = sum;
+		f1 = f2;
+		f2 = sum;
 		f1o = f2o;
 		f2o = sumo;
 
