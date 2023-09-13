@@ -9,7 +9,7 @@
 */
 
 int main(void)
-{      
+{
 	unsigned long fib1 = 0, fib2 = 1, sum = 0;
 	int i;
 
