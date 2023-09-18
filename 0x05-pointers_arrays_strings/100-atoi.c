@@ -11,11 +11,11 @@
 int _atoi(char *s)
 {
 	int i, num = 0, n = 0;
-	bool f = false;
+	int f = false;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] >= '0' &&  s[i] <= s[i] <= '9')
+		if (s[i] >= '0' &&  s[i] <= '9')
 		{
 			num = num * 10 + (s[i] - '0');
 			++n;
@@ -24,7 +24,7 @@ int _atoi(char *s)
 			break;
 
 		if (n == 1 && i != 0 && s[i - 1] == '-')
-			f = true;
+			++f;
 	}
 	if (f)
 		printf("-");
