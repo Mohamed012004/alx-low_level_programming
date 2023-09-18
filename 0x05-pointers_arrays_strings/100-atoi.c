@@ -14,15 +14,11 @@ int _atoi(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		if (s[i] == '-')
-			++f;
+			f *= -1;
 		else if (s[i] >= '0' &&  s[i] <= '9')
 			num = num * 10 + (s[i] - '0');
 		else if (num > 0)
 			break;
-	if (f % 2 != 0)
-		f = -1;
-	else
-		f = 1;
 
 	return (num * f);
 }
