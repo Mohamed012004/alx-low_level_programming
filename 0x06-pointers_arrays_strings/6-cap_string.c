@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * islower - check character lowercase
+ * is_lower - check character lowercase
  *
  * @c: character of string
  *
  * Return: 1 (is lower) , 0 (success)
 */
 
-int islower(char c)
+int is_lower(char c)
 {
 	if (c >= 97 && c <= 122)
 		return (1);
@@ -47,11 +47,11 @@ char *cap_string(char *s)
 	int i, f = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
-		if (delimiter(s[i])
-				f = 1;
-		else if (islower(s[i] && f)
+		if (delimiter(s[i]))
+			f = 1;
+		else if (is_lower(s[i]) && f)
 		{
-			s[i + 1] -= 32;
+			s[i] -= 32;
 			f = 0;
 		}
 		else
