@@ -1,6 +1,40 @@
 #include "main.h"
 
 /**
+ * islower - check character lowercase
+ *
+ * @c: character of string
+ *
+ * Return: 1 (is lower) , 0 (success)
+*/
+
+int islower(char c)
+{
+	if (c >= 97 && c <= 122)
+		return (1);
+	return (0);
+}
+
+/**
+ * delimiter - check if saperator is exist
+ *
+ * @c: character of string
+ *
+ * Return: 1 (is saperator) , 0 (Success)
+*/
+
+int delimiter(char c)
+{
+	int i;
+	char a[] = " \t\n,;.!?\"(){}";
+
+	for (i = 0; i < 13; i++)
+		if (c == a[i])
+			return (1);
+	return (0);
+}
+
+/**
  * cap_string - Capitalize all Words of string.
  *
  * @s: string
@@ -10,13 +44,18 @@
 
 char *cap_string(char *s)
 {
-	int i;
+	int i, f = 1;
 
-	i = 0;
-	if (s[0] >= 97 && s[0] >= 122)
-		s[0] -= 32;
-	for (i = 1; s[i] != '\0'; i++)
-		if ((s[i] == ' ' || s[i] == '\n' || s[i] == '\t') && s[i + 1] >= 97 && s[i + 1] <= 122)
+	for (i = 0; s[i] != '\0'; i++)
+		if (delimiter(s[i])
+				f = 1;
+		else if (islower(s[i] && f)
+		{
 			s[i + 1] -= 32;
+			f = 0;
+		}
+		else
+			f = 0;
+
 	return (s);
 }
