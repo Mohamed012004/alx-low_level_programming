@@ -8,7 +8,7 @@
  * Return 1 (true) , 0 (false)
 */
 
-isPrintableASCII(int n)
+int isPrintableASCII(int n)
 {
 	return (n >= 32 && n <= 126);
 }
