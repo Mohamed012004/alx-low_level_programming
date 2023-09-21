@@ -5,7 +5,7 @@
  *
  * @n: operand integer
  *
- * Return 1 (true) , 0 (false)
+ * Return: 1 (true) , 0 (false)
 */
 
 int isPrintableASCII(int n)
