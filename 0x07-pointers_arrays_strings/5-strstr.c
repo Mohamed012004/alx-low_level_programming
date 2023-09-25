@@ -1,23 +1,32 @@
 #include "main.h"
 
 /**
- * _strspn - gets the number of bytes in the initial segment of (s)
- *	which consist only of bytes from accept.
+ * _strstr - finds the first occurrence of the substring (needle)
+ *	in the string haystack. The terminating null bytes (\0)
+ *	are not compared.
  *
- * @s: array of character
- * @accept: array of charcter
+ * @haystack: array of character.
+ * @needle: array of charcter.
  *
- * Return: integer num
+ * Return: a pointer to the beginning of the located substring,
+ *	or NULL if the substring is not found.
 */
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	unsigned int n, i, k = 0;
 
-	for (i = 0; s[i] != '\0' ; i++)
-		for (j = 0; accept[j] != s[i]; j++)
-			if (accept[j] == '\0')
-				return (i);
+	for (n = 0; needle[n] != '\0' ; n++)
+		;
+	for (i = 0 ; haystack[i] != '\0'; i++)
+	{
+		if (haystack[i] == needle[k])
+			++k;
+		else
+			k = 0;
 
-	return (i);
+		if (k == n)
+			return (haystack + (i - n + 1));
+	}
+	return (NULL);
 }
