@@ -26,7 +26,7 @@ char *_strstr(char *haystack, char *needle)
 		else
 			k = 0;
 
-		if (k == n && neehl[i] != '\0')
+		if (k == n && needle[i] != '\0')
 			return (haystack + (i - n + 1));
 	}
 	return (NULL);
