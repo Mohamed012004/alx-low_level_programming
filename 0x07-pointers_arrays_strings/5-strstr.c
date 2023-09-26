@@ -23,6 +23,8 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (haystack[i] == needle[k])
 			++k;
+		else
+			k = 0;
 
 		if (k == n)
 			return (haystack + (i - n + 1));
