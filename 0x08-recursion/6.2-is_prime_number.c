@@ -5,18 +5,27 @@
  *
  * @n: given number
  * @num: number of diviser for (n).
+ * @count: operand integer
  *
  * Return: integer number.
 */
 
-int is_prime(int n, int num)
+int is_prime(int n, int num, int count)
 {
-	if (num >= n / 2 && n > 1)
-		return (1);
-	else if (n % num == 0 || n < 2)
+	if (n < 2)
 		return (0);
-	else
-		return (is_prime(n, num + 1));
+
+	if (count > n / 2)
+	{
+		if (num > 1)
+			return (0);
+		else
+			return (1);
+	}
+
+	if (n % count == 0)
+		++num;
+	is_prime(n, num, count + 1);
 }
 
 /**
@@ -29,5 +38,5 @@ int is_prime(int n, int num)
 
 int is_prime_number(int n)
 {
-	return (is_prime(n, 2));
+	return (is_prime(n, 0, 1));
 }
