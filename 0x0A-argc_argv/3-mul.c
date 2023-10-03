@@ -9,7 +9,7 @@
  * Return:  result of the multiplication.
 */
 
-main(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
 	int sum;
 
