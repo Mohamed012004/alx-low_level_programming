@@ -17,6 +17,6 @@ main(int argc, char const *argv[])
 		puts("Error");
 		return (1);
 	}
-	printf("lld\n", argv[1] * argv[2]);
+	printf("lld\n", atoi(argv[1] * argv[2]));
 	return (0);
 }
