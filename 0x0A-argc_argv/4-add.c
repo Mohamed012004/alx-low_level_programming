@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int num = 0;
+	unsigned int num = 0;
 	char *c;
 
 	while (--argc)
