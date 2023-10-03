@@ -15,14 +15,14 @@ char *str_concat(char *s1, char *s2)
 	unsigned int n1, n2, i, j;
 	char *concat;
 
-	for (n1 = 0; s1[n1] != '\0'; n1++)
-		;
-	for (n2 = 0; s2[n2] != '\0'; n2++)
-		;
 	if (s1 == NULL)
 		s1 = '\0';
 	if (s2 == NULL)
 		s2 = '\0';
+	for (n1 = 0; s1[n1] != '\0'; n1++)
+		;
+	for (n2 = 0; s2[n2] != '\0'; n2++)
+		;
 	concat = malloc(n1 + n2 + 1);
 	if (concat == NULL)
 		return (0);
