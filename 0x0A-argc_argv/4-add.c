@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib>
 
@@ -23,6 +22,9 @@ int main(int argc, char *argv[])
 			num += atoi(argv[argc]);
 		}
 	}
-	printf("%d\n", num);
+	if (!num)
+		printf("0\n");
+	else
+		printf("%d\n", num);
 	return (0);
 }
