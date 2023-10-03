@@ -22,9 +22,6 @@ int main(int argc, char *argv[])
 			num += atoi(argv[argc]);
 		}
 	}
-	if(num)
-		printf("%d\n", num);
-	else
-		printf("0\n");
+	printf("%d\n", num);
 	return (0);
 }
