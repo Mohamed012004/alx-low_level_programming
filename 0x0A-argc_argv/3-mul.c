@@ -18,9 +18,12 @@ main(int argc, char const *argv[])
 	{
 		sum = atoi(argv[1]) * atoi(argv[2]);
 		printf("%lld\n", sum);
-		return (0);
 	}
 	else
-		printf("s\n", "Error\n");
+	{
+	printf("Error\n");
 	return (1);
+	}
+
+	return (0);
 }
