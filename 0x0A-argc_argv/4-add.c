@@ -3,13 +3,11 @@
 
 /**
  * main - program that adds positive numbers.
- *
  * @argc: int(size of argv)
  * @argv: list (array of char)
  *
  * Return: 0.
 */
-
 int main(int argc, char *argv[])
 {
 	int num = 0;
