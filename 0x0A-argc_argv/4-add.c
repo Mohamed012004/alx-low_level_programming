@@ -7,12 +7,12 @@
  * @argc: int(size of argv)
  * @argv: list (array of char)
  *
- * Return: 0
+ * Return: 0.
 */
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int num = 0;
 	char *c;
 
 	while (--argc)
@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(argv[argc]);
+			num += atoi(argv[argc]);
 		}
 	}
-	printf("%d\n", sum);
+	printf("%d\n", num);
 	return (0);
 }
