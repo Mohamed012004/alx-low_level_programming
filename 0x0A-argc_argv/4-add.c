@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 			num += atoi(argv[argc]);
 		}
 	}
-	if (!num)
+	if (num)
 		printf("0\n");
 	else
 		printf("%d\n", num);
