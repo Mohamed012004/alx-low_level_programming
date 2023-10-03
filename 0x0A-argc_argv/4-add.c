@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * main - program that adds positive numbers.
@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
 			num += atoi(argv[argc]);
 		}
 	}
-	printf("%d\n", num);
+	if(num)
+		printf("%d\n", num);
+	else
+		printf("0\n");
 	return (0);
 }
