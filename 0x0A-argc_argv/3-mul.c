@@ -12,11 +12,15 @@
 int
 main(int argc, char const *argv[])
 {
-	if (argc < 3)
+	long long sum;
+
+	if (argc == 3)
 	{
-		puts("Error");
-		return (1);
+		sum = atoi(argv[1]) * atoi(argv[2]);
+		printf("%lld\n", sum);
+		return (0);
 	}
-	printf("lld\n", atoi(argv[1] * argv[2]));
-	return (0);
+	else
+		printf("s\n", "Error\n");
+	return (1);
 }
