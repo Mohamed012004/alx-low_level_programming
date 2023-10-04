@@ -38,13 +38,13 @@ char **strtow(char *str)
 	int i = 0, j, k, l, n = 0, c = 0;
 	char **s;
 
-	if (!str || *str != '\0')
+	if (str == NULL || *str != '\0')
 		return (NULL);
 	n = wdcnt(str);
 	if (n == 1)
 		return (NULL);
-	s = (char **) malloc(n * sizeof(char *));
-	if (!s)
+	s = (char **)malloc(n * sizeof(char *));
+	if (s == NULL)
 		return (NULL);
 	s[n - 1] = NULL;
 	while (str[i])
