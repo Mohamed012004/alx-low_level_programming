@@ -14,6 +14,7 @@ int wdcnt(char *str)
 	int i, n = 0;
 
 	for (i = 0; str[i]; i++)
+	{
 		if (str[i] == ' ')
 		{
 			if (str[i + 1] != ' ' && str[i + 1] != '\0')
@@ -21,6 +22,7 @@ int wdcnt(char *str)
 		}
 		else if (i == 0)
 			++n;
+	}
 	++n;
 	return (n);
 }
@@ -38,7 +40,7 @@ char **strtow(char *str)
 	int i = 0, j, k, l, n = 0, c = 0;
 	char **s;
 
-	if (str == NULL || *str != '\0')
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	n = wdcnt(str);
 	if (n == 1)
