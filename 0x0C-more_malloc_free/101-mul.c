@@ -29,19 +29,25 @@ void _puts(char *str)
 
 int _atoi(char *str)
 {
-	int sign = 1;
+	int sign = 1, f = 1;
 	unsigned long int ans = 0, first_num, i;
 
 	for (first_num = 0; !(str[first_num] >= 48 && str[first_num] <= 57)
 	; first_num++)
 		if (str[first_num] == '-')
 			sign *= -1;
-	for (i = first_num; (str[i] >= 48 && str[i] <= 57); i++)
-	{
-		ans *= 10;
-	       ans += (str[i] - 48);
-	}
-	return (sign * ans);
+	for (i = first_num; str[i]; i++)
+		if (str[i] >= 48 && str[i] <= 57)
+		{
+			ans *= 10;
+			ans += (str[i] - 48);
+		}
+		else
+		{
+			_puts("Error");
+			exit(98);
+		}
+		return (sign * ans);
 }
 
 /**
