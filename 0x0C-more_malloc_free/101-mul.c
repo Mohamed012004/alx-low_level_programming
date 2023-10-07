@@ -39,7 +39,7 @@ int _atoi(char *str)
 		ans *= 10;
 	       ans += (str[i] - 48);
 	}
-	return (signe * ans);
+	return (sign * ans);
 }
 
 /**
