@@ -33,8 +33,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
 
-	if (!nmemb || !size)
-		return (0);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 	m = malloc(sizeof(size) * nmemb);
 	if (m == NULL)
 		return (NULL);
