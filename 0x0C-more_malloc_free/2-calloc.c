@@ -32,11 +32,10 @@ char *_memset(char *s, char b, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
-	(void)size;
 
 	if (!nmemb || !size)
 		return (0);
-	m = malloc(sizeof(int) * nmemb);
+	m = malloc(sizeof(size) * nmemb);
 	if (m == NULL)
 		return (NULL);
 	_memset(m, 0, sizeof(int) * nmemb);
