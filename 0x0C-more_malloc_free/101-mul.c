@@ -61,13 +61,14 @@ void print_int(unsigned long int n)
 		ans = n / divisor;
 		_putchar('0' + ans);
 	}
+}
 
 /**
  * main - program prints multiplication two integers.
  *
  * @argc: int.
  * @argv: list.
- *
+ * 
  * Return: 0.
 */
 
