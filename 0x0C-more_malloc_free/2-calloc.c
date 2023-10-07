@@ -32,6 +32,7 @@ char *_memset(char *s, char b, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
+	(void)size;
 
 	if (!nmemb || !size)
 		return (0);
