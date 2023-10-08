@@ -27,7 +27,7 @@ void _puts(char *str)
  * Return: intege.
 */
 
-long int _atoi(char *str)
+long int _atoi(const char *str)
 {
 	int sign = 1;
 	unsigned long int ans = 0, first_num, i;
@@ -83,7 +83,7 @@ void print_int(long int n)
  * Return: 0.
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 
