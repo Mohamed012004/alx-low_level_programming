@@ -1,4 +1,5 @@
-#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _puts - prints a string.following new line.
@@ -26,7 +27,7 @@ void _puts(char *str)
  * Return: intege.
 */
 
-int _atoi(char *str)
+long int _atoi(char *str)
 {
 	int sign = 1;
 	unsigned long int ans = 0, first_num, i;
@@ -55,10 +56,15 @@ int _atoi(char *str)
  * @n: int.
 */
 
-void print_int(unsigned long int n)
+void print_int(long int n)
 {
 	unsigned long int divisor = 1, i, ans;
 
+	if (n < 0)
+	{
+		putchar(45);
+		n *= -1;
+	}
 	for (i = 0; n / divisor > 9; i++, divisor *=  10)
 		;
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
