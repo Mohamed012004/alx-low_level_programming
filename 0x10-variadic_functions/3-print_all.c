@@ -45,7 +45,10 @@ void format_string(char *separator, va_list ap)
 	printf("%s%s", separator, str);
 }
 
-/***/
+/**
+ * print_all - prints anything.
+ * @format: format string.
+*/
 
 void print_all(const char * const format, ...)
 {
